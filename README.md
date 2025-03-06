@@ -26,7 +26,7 @@ If you have a specific query, this agent also helps you run it comprehensively. 
     ```
     jupyter notebook
     ```
-  - In jupyter, open `tests/test_agent.ipynb` ([this file](https://github.com/maryamyazdi/Automatic-EDA-Agent/blob/master/tests/test_agent.ipynb) and observe how it works on sample datasets.
+  - In jupyter, open `tests/test_agent.ipynb` ([this file](https://github.com/maryamyazdi/Automatic-EDA-Agent/blob/master/tests/test_agent.ipynb)) and observe how it works on sample datasets.
 
   - To test the agent on your own dataset, replace the placeholders in the cell below and copy/paste the third cell in the `tests/test_agent.ipynb` notebook.
     ```python
@@ -54,10 +54,12 @@ src/
 │   └── dataframe_visualizer/
 │       ├── visualizer.py
 │       └── prompts.py
-├── types/
+├── data_types/
 │   ├── __init__.py
 │   └── tabular.py
 ├── helpers.py
-└── openai_client.py
+├──openai_client.py
+│
+tests/
+└── test_agent.ipynb
 ```
-

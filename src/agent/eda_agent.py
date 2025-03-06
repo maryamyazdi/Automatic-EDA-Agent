@@ -8,10 +8,10 @@ from src.tools import all_tools
 from src.tools import DataAnalyzer, DataVisualizer
 
 
-class TabularBot:
+class Agent:
     def __init__(self, path: str):
         self.df = TabularData(path=path)
-        print(f"[tabular bot] data loaded!")
+        print(f"Data loaded!")
         self.df_info = get_df_info(self.df.data)
         self.user_query = None
         self.tasks = None
@@ -19,7 +19,7 @@ class TabularBot:
         self.visualizer = DataVisualizer()
 
     def generate_tasks(self):
-        print(f"[tabular bot] Processing the query...")
+        print(f"Processing the query...")
         self.tasks = ask_gpt(
             prompts=[
                 generate_tasks_prompt.format(
