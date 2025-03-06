@@ -30,12 +30,12 @@ If you have a specific query, this agent also helps you run it comprehensively. 
 
   - To test the agent on your own dataset, replace the placeholders in the cell below and copy/paste the third cell in the `tests/test_agent.ipynb` notebook.
     ```python
-    agent = EDA_agent(path='[path/to/your/local/dataset]')  # currently supporting .xlcx and .csv files
+    agent = Agent(path='[path/to/your/local/dataset]')  # currently supporting .xlcx and .csv files
     
     query = """[informaton about the dataset (optional) and your desired analyses]
     """
     
-    bot.process_query(user_query=query)
+    agent.process_query(user_query=query)
     ```
   - Run the cell and see the results being produced per each task
 
